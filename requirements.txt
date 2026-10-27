@@ -1,0 +1,5 @@
+mediapipe==0.10.14   # code uses the legacy mp.solutions.pose API
+opencv-python
+numpy<2
+requests
+pyttsx3

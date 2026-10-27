@@ -1,0 +1,62 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- Virtual environments ----
+venv/
+.venv/
+env/
+ENV/
+
+# ---- Secrets / local config ----
+.env
+.env.*
+*.local
+
+# ---- Model weights (large; distribute separately, e.g. Hugging Face / Releases) ----
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.h5
+*.tflite
+
+# ---- Videos & recordings (raw footage may contain people) ----
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.wav
+# Keep documentation images tracked
+!docs/images/*
+
+# ---- Logs & temp ----
+*.log
+tmp/
+temp/
+
+# ---- IDEs / editors ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+desktop.ini
