@@ -94,13 +94,13 @@ pip install -r requirements.txt
 
 The fine-tuned model weights are **not** stored in this repository (they are too large for Git). They are hosted on Hugging Face:
 
-**[<hf-username>/<hf-repo-name>](https://huggingface.co/<hf-username>/<hf-repo-name>)**
+**[Aesope/Llama-3.2-Squat-Coach](https://huggingface.co/Aesope/Llama-3.2-Squat-Coach)**
 
 1. Download the GGUF file into the project folder:
 
    ```bash
    pip install -U huggingface_hub
-   hf download <hf-username>/<hf-repo-name> squatcoachv3.gguf --local-dir .
+   hf download Aesope/Llama-3.2-Squat-Coach squatcoachv3.gguf --local-dir .
    ```
 
 2. Register it with Ollama under the name the script expects:
@@ -114,7 +114,6 @@ The fine-tuned model weights are **not** stored in this repository (they are too
 The model is a fine-tune of Llama 3.2 and is subject to the [Llama 3.2 Community License](https://www.llama.com/llama3_2/license/). Built with Llama.
 
 > No model? Set `USE_OLLAMA = False` at the top of `v3_person.py`. Rep counting, scoring and the on-screen feedback still work; only the LLM cues and the Big Five prompt are skipped.
-
 ## Usage
 
 ```bash
